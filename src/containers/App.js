@@ -1,7 +1,7 @@
 import { Component } from "react";
-import CardList from "../components/CardList";
-import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
+import CardList from "components/CardList";
+import SearchBox from "components/SearchBox";
+import Scroll from "components/Scroll";
 
 class App extends Component {
   constructor() {
@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
-      .then((users) => this.setState({robots: users}))
+      .then((users) => this.setState({ robots: users }));
   }
 
   onSearchChange = (event) => {
