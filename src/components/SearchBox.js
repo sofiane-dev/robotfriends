@@ -1,5 +1,3 @@
-import { Component } from "react";
-
 export default function SearchBox(props) {
   return (
     <div className="pa2">
